@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+      font-family: "Mochiy Pop One", sans-serif;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+
+}
+
+
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: white;
+  box-shadow: 10px 5px 5px lightsalmon;
+  border-radius: 25px;
+  padding: 30px;
+}
+
+
+
+.image {
+  margin-bottom: 10px;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius:50%;
+    background-color: lightsalmon;
+    padding: 3px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.text-data .job {
+  font-size: 8px;
+}
+
+.profile-card .media-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-buttons .link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 34px;
+  border-radius:50%;
+  text-decoration: none;
+  background-color: black;
+  margin: 0 8px;
+  color: white;
+  font-size:18px; 
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button {
+    border: none;
+    color: white;
+    border-radius: 20px; 
+    padding: 8px 24px;
+    background-color: lightsalmon;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buttons .button:hover{
+  background-color: rgb(232, 111, 64);
+}
+
+.profile-card .analytics {
+    display: flex;
+    align-items: center;
+}
+
+.analytics .data {
+  display: flex;
+  align-items: center;
+  padding:0 20px;
+  border-right: black solid 2px;
+  margin-top: 10px;
+}
+
+.data:last-child{
+  border-right: none;
+}
